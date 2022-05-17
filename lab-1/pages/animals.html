@@ -7,9 +7,24 @@
     <title>Animal house</title>
     <link rel="icon" type="image/png" href="../resources/static/images/pet-house.png" />
     <link rel="stylesheet" href="../resources/static/css/animals.css">
-    <script src="../resources/static/js/main.js"></script>
+    <script src="../resources/static/js/animals.js"></script>
 </head>
 <body>
+<div class="dialog" id="call-dialog">
+    <div class="dialog-content">
+        <span class="close">&times;</span>
+        <h1>Request a call</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Anna Mango" required />
+            <label for="phone-number">Phone number</label>
+            <input type="tel" id="phone-number" placeholder="+380661234567" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="anna.mango@petmail.com" required />
+            <input value="Submit" type="submit" />
+        </form>
+    </div>
+</div>
 
 <header class="site-header">
     <div class="center-element">
