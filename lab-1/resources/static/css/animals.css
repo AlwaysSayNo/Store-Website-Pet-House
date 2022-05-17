@@ -1,0 +1,102 @@
+:root {
+    --bg-color: #f6f8fa;
+    --bg-inv-color: #24292f;
+    --text-color: #24292f;
+    --text-inv-color: #ffffff;
+    --company-logo-width: 120px;
+    --company-logo-height: 120px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font: 1.4em / 2.2em "PT Sans", sans-serif;
+    min-width: 600px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-element {
+    margin: 0 auto;
+    max-width: 960px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.site-header {
+    height: 220px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.site-header > .center-element {
+    display: flex;
+}
+
+.header-left {
+    padding-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    height: var(--company-logo-height);
+    width: var(--company-logo-width);
+}
+
+.company-data {
+    height: var(--company-logo-height);
+    margin-left: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.company-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.company-name > a,
+.company-name > a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-right {
+    min-width: max-content;
+    padding-top: 50px;
+    text-align: right;
+}
+
+.phone-number {
+    font-family: "PT Sans", sans-serif;
+    font-stretch: condensed;
+    font-size: 3.5rem;
+    line-height: 40px;
+}
+
+.feedback {
+    font-size: 2rem;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-decoration: underline dashed;
+    color: var(--text-color);
+}
+
+.feedback:hover {
+    color: black;
+    text-decoration-style: solid;
+}
+
+#call-button {
+    cursor: pointer;
+}
