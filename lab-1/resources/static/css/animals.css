@@ -308,3 +308,32 @@ body {
 .offer > .bottom img {
     cursor: pointer;
 }
+
+.pagination {
+    margin-top: 24px;
+    font-size: 1.8rem;
+}
+
+.pagination ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination ul>li>a {
+    color: var(--text-color);
+}
+
+.company-description-hr {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.company-description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
