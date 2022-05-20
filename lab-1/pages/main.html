@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal house</title>
+    <link rel="icon" type="image/png" href="../resources/static/images/pet-house.png" />
+    <link rel="stylesheet" href="../resources/static/css/animals.css">
+    <script src="../resources/static/js/animals.js"></script>
 </head>
 <body>
+<div class="dialog" id="call-dialog">
+    <div class="dialog-content">
+        <span class="close">&times;</span>
+        <h1>Request a call</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Anna Mango" required />
+            <label for="phone-number">Phone number</label>
+            <input type="tel" id="phone-number" placeholder="+380661234567" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="anna.mango@petmail.com" required />
+            <input value="Submit" type="submit" />
+        </form>
+    </div>
+</div>
+
+<header class="site-header">
+    <div class="center-element">
+        <div class="header-left">
+            <div>
+                <a href="main.html"><img class="company-logo" src="../resources/static/images/pet-house.png" alt="Company logo"></a>
+            </div>
+            <div class="company-data">
+                <div class="company-name">
+                    <a href="main.html">Animal house</a>
+                </div>
+                <div>Everyone deserves a home</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="phone-number">+380 (50) 111-11-11</div>
+            <div class="phone-number">+380 (67) 111-11-11</div>
+            <a class="feedback" id="call-button">Contact us</a>
+        </div>
+    </div>
+</header>
+
+<nav class="site-nav">
+    <div class="center-element">
+        <ul class="horizontal-menu">
+            <li><a href="main.html">Main</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="slides">
+    <div class="slides-wrapper">
+        <img class="active" src="../resources/static/images/slides/1.jpg" alt="First slide image" />
+        <img src="../resources/static/images/slides/2.jpg" alt="Second slide image" />
+        <img src="../resources/static/images/slides/3.jpg" alt="Third slide image" />
+    </div>
+    <div class="slides-previous"></div>
+    <div class="slides-forward"></div>
+</div>
+
+<div class="breadcrumbs">
+    <div class="center-element">
+        <ul class="horizontal-menu">
+            <li>
+                <a href="main.html">Main</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <div class="center-element">
+        <div>
+            <h1>Our mission</h1>
+            <p>Before you buy a dog or cat, just come round to our shelter. It hosts many faithful friends. You will find the one to love and take care of. They are different: big, small, ready to protect you anytime, friendly, lazybones, and restless. Whenever you adopt a pet, you save the three: a pet you give home, another homeless pet that will find a vacant place in the shelter, and a Human in your heart. Adopt, don’t shop, cause the true friendship is priceless! </p>
+            <img src="../resources/static/images/pet-house.png" alt="Company logo" width="250" height="250"/>
+            <p>Check our <a class="feedback" href="animals.html">animals list</a> or <a class="feedback" href="contacts.html">contact with us</a>.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="center-element">
+        <div>© Animal house 2022<br />animal.house@petmail.com</div>
+        <div>
+            <ul class="vertical-menu">
+                <li><a href="main.html">Main</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="../resources/static/images/business-man.png" width="80" height="80" alt="Company owner" /><br>
+            Nazar Grynko
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
